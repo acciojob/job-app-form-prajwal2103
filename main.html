@@ -13,21 +13,21 @@
 		<td>
 		<label for="name">Name*:</label>
 		</td>
-		<td><input type="text" id="name" ></td>
+		<td><input type="text" id="name" required ></td>
 		   
 	   </tr>  
 	    <tr>
 		<td>
 		<label for="email">Email*:</label>
 		</td>
-		<td><input type="text" id="email" ></td>
+		<td><input type="email" id="email"required ></td>
 		   
 	   </tr>  
 	   <tr>
 		   <td>Gender*:</td>
 		   <td>
-			 <td><label><input type="radio" name="Gender"value="male">Male</label>
-                <label><input type="radio" name="Gender" value="Female">Female</label> 
+			 <td><label><input type="radio" name="Gender"value="male" required>Male</label>
+                <label><input type="radio" name="Gender" value="Female" required>Female</label> 
             </td>
 		   </td>
 		   
@@ -37,19 +37,24 @@
 		   <td>
 			<select id="portfolio">
 			<option value="Apple">Apple</option>
-			<option value="Apple">Asus</option>
-			<option value="Apple">HP</option>
+			<option value="Asus">Asus</option>
+			<option value="HP">HP</option>
 		   </td>
 	   </tr>
 	   <tr>
 		<td><label for="portfolio" >Age*</td>
-		<td><input id="portfolio" type="number">
+		<td><input id="portfolio" type="number" required>
 			
 	   </tr>
 	   <tr>
 		<td><label for="portfolio">DOB*</label></td>
-		<td><input id="portfolio" type="date"></td>
+		<td><input id="portfolio" type="date" required></td>
 	   </tr>
+	   <tr>
+		<td><label for="password">Password</label></td>
+		<td><input id="password" required text="password">
+	   </tr>
+	   
 	   <tr>
 		   <td><button type="submit">Submit</button></td>
 	   </tr>
